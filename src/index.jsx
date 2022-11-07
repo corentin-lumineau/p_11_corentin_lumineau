@@ -5,8 +5,9 @@ import './index.css';
 import Home from './pages/Home'
 import Header from './components/Header';
 import reportWebVitals from './reportWebVitals';
-import Apartment from './pages/Apartment';
+import Flat from './pages/Flat';
 import About from './pages/About';
+import Footer from './components/Footer';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
@@ -15,9 +16,10 @@ root.render(
       <Header />
       <Routes>
         <Route path="/" element={<Home />} />
-        <Route path="/apartment/:id" element={<Apartment />} />
+        <Route path="/apartment/:id" element={<Flat />} />
         <Route path="/about" element={<About />} />
       </Routes>
+      <Footer />
     </Router>
   </React.StrictMode>
 );

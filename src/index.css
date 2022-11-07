@@ -11,3 +11,22 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+*, *::after, *::before {
+  box-sizing: border-box;
+}
+
+body {
+  --color-primary: #FF6060;
+}
+
+h1 {
+  font-size: 48px;
+  font-weight: 500;
+}
+
+a {
+  text-decoration: none;
+  color: var(--color-primary);
+}
+
