@@ -23,10 +23,31 @@ body {
 h1 {
   font-size: 48px;
   font-weight: 500;
+  margin: unset;
 }
 
 a {
   text-decoration: none;
   color: var(--color-primary);
+}
+
+button {
+  border: unset;
+  background: unset;
+  padding: unset;
+}
+
+button:hover {
+  cursor: pointer;
+}
+
+ul {
+  padding: unset;
+  margin: 0.5em;
+}
+
+li {
+  list-style: none;
+  font-weight: 300;
 }
 

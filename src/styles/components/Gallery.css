@@ -1,0 +1,17 @@
+.gallery-container {
+    position: relative;
+}
+
+.gallery-arrow-left {
+    position: absolute;
+    transform: scale(0.5);
+    left: 0;
+    top: 30%;
+}
+
+.gallery-arrow-right {
+    position: absolute;
+    transform: scale(0.5);
+    right: 0;
+    top: 30%;
+}
