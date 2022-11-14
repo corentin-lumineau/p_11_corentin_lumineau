@@ -1,30 +1,40 @@
-.description-container {
+.collapse-container {
     width: 100%;
 }
 
-.description-header {
+.collapse-header {
     display: flex;
     justify-content: space-between;
     background: var(--color-primary);
     border-radius: 10px;
     color: white;
     padding-left: 20px;
-    font-size: 1rem;
+    
 }
 
-.description-header img {
+.collapse-header img {
    transform: scale(0.5);
 }
 
-.description-content {
+.collapse-content {
     color: var(--color-primary);
     line-height: 1.5em;
-    font-size: 18px;
+    font-size: 1rem;
     padding: 10px;
     background: #F6F6F6;
     letter-spacing: 1px;
 }
 
-.description-content p {
+.collapse-content p {
     font-weight: 300;
+}
+
+@media screen and (max-width: 800px) {
+    .collapse-header {
+        font-size: 0.7rem;
+    }
+
+    .collapse-content {
+        font-size: 0.6rem;
+    }
 }

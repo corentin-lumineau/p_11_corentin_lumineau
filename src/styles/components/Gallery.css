@@ -15,3 +15,15 @@
     right: 0;
     top: 30%;
 }
+
+@media screen and (max-width: 800px) {
+    .gallery-arrow-left {
+        transform: scale(0.3);
+        top: 20%;
+    }
+
+    .gallery-arrow-right {
+        transform: scale(0.3);
+        top: 20%;
+    }
+}

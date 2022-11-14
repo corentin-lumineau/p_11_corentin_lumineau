@@ -4,6 +4,8 @@
     display: flex;
     flex-direction: column;
     gap: 80px;
+    padding-left: 20px;
+    padding-right: 20px;
 }
 
 .banner-home {
@@ -36,4 +38,26 @@
     flex-wrap: wrap;
     justify-content: space-around;
     gap: 50px;
+}
+
+@media screen and (max-width: 800px) {
+
+    .main-wrapper{
+        gap: 40px;
+    } 
+
+    .flats-container a {
+        width: 100%;
+    }
+
+    .banner-home {
+        border-radius: 10px;
+        height: 120px;
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
+    .banner-home img {
+        border-radius: 10px;
+    }
 }

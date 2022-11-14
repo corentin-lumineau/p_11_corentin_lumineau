@@ -15,3 +15,9 @@
 .bloc-footer h2 {
     font-weight: 400;
 }
+
+@media screen and (max-width: 800px) {
+    .bloc-footer h2 {
+      font-size: 0.8rem;
+    }
+}
