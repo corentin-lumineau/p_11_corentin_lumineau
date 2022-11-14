@@ -22,7 +22,7 @@ function Flat() {
     return(
         <main className='show-container'>
             <Gallery pictures={currentFlat.pictures}/>
-            <div className='main-title'>
+            <section className='main-title'>
                 <div className='principal-informations'>
                     <div className='flat-title'>
                         <h1>{currentFlat.title}</h1>
@@ -47,11 +47,11 @@ function Flat() {
                         <Rating rating={currentFlat.rating}/>
                     </div>
                 </div>
-            </div>
-            <div className='flat-informations'>
+            </section>
+            <section className='flat-informations'>
                 <Collapse title="Description" content={currentFlat.description}/>
                 <Collapse title="Equipements" content={currentFlat.equipments}/>
-            </div>
+            </section>
         </main>
     )
 }

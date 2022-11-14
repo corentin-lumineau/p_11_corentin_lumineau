@@ -26,11 +26,11 @@ function Home() {
                 <img src={banner} alt="banner-img" />
                 <h1>Chez vous, partout et ailleurs</h1>
             </div>
-            <div className='flats-container'>
+            <section className='flats-container'>
                 {myflats && myflats.map(({title, cover, id}) => (
                     <Link to={`/flat/${id}`} state={{ flatsList: myflats }} key={id} ><CardFlat title={title} cover={cover} /></Link>
                 ))}
-            </div>
+            </section>
         </main>
       
     )
