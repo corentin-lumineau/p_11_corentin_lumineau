@@ -1,0 +1,30 @@
+.description-container {
+    width: 100%;
+}
+
+.description-header {
+    display: flex;
+    justify-content: space-between;
+    background: var(--color-primary);
+    border-radius: 10px;
+    color: white;
+    padding-left: 20px;
+    font-size: 1rem;
+}
+
+.description-header img {
+   transform: scale(0.5);
+}
+
+.description-content {
+    color: var(--color-primary);
+    line-height: 1.5em;
+    font-size: 18px;
+    padding: 10px;
+    background: #F6F6F6;
+    letter-spacing: 1px;
+}
+
+.description-content p {
+    font-weight: 300;
+}

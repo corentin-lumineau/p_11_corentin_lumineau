@@ -8,17 +8,19 @@ import reportWebVitals from './reportWebVitals';
 import Flat from './pages/Flat';
 import About from './pages/About';
 import Footer from './components/Footer';
+import Error from './components/Error';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
     <Router>
       <Header />
-      <Routes>
-        <Route path="/" element={<Home />} />
-        <Route path="/apartment/:id" element={<Flat />} />
-        <Route path="/about" element={<About />} />
-      </Routes>
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/flat/:flatId" element={<Flat />} />
+          <Route path="/about" element={<About />} />
+          <Route path="*" element={<Error />} />
+        </Routes>
       <Footer />
     </Router>
   </React.StrictMode>

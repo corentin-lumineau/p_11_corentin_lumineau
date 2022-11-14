@@ -1,7 +1,10 @@
 .navbar {
     display: flex;
     justify-content: space-between;
-    padding: 50px;
+    max-width: 1300px;
+    margin: auto;
+    padding-top: 50px;
+    padding-bottom: 50px;
 }
 
 .logo-header {
