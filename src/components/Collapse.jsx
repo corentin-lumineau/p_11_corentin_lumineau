@@ -6,11 +6,14 @@ function Description({title, content}) {
 
     const [isOpen, setIsOpen] = useState(false)
    
+   
     return isOpen? (
         <div className="collapse-container">
             <div className='collapse-header'>
                 <h3>{title}</h3>
-                <button onClick={() => setIsOpen(false)}><img src={arrow} alt="arrow"/></button>
+                <button onClick={() => setIsOpen(false)}>
+                    <img src={arrow} alt="arrow" className='arrow-up'/>
+                </button>
             </div>
             <div className='collapse-content'>
                 {typeof content === "string" ?  <p>{content}</p> : <ul>{content.map((el) => <li key={el}>{el}</li>)}</ul>}
@@ -23,7 +26,7 @@ function Description({title, content}) {
                 <button onClick={() => (
                     setIsOpen(true)
                 )}>
-                    <img src={arrow} alt="arrow"/>
+                    <img src={arrow} alt="arrow" className="arrow-down"/>
                 </button>
             </div>
         </div>

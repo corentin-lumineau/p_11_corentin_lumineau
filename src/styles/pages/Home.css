@@ -1,6 +1,6 @@
 .main-wrapper {
+    width: 100%;
     max-width: 1300px;
-    margin: auto;
     display: flex;
     flex-direction: column;
     gap: 80px;

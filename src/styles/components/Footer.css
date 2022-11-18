@@ -1,11 +1,12 @@
 .footer {
+    width: 100%;
     display: flex;
     flex-direction: column;
     align-items: center;
     background: black;
     padding-top: 40px;
     padding-bottom: 20px;
-    margin-top: 20px;
+    margin-top: 40px;
 }
 
 .footer .bloc-footer {

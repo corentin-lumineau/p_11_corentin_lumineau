@@ -4,11 +4,11 @@ import rightArrow from '../assets/right_arrow.png'
 import '../styles/components/Gallery.css'
 
 function Gallery({pictures}) {
-
-    const [currentPicture, setCurrentPicture] = useState(pictures[0])
+  
+    const [currentPicture, setCurrentPicture] = useState(pictures[0]);
 
     const getNextPicture = (currentPicture) => {
-        let nextPicture = ''
+        let nextPicture = '';
         if (pictures[pictures.length - 1] === currentPicture) {
             nextPicture = pictures[0];
         }
@@ -19,7 +19,7 @@ function Gallery({pictures}) {
     }
 
     const getPreviousPicture = (currentPicture) => {
-        let previousPicture = ''
+        let previousPicture = '';
         if (pictures[0] === currentPicture) {
             previousPicture = pictures[pictures.length - 1];
         }
@@ -32,16 +32,15 @@ function Gallery({pictures}) {
     return(
         <div className="gallery-container">
             <button onClick={() => {
-                console.log(pictures.indexOf(currentPicture))
                setCurrentPicture(getPreviousPicture)
             }}>
-                <img src={leftArrow} alt="" className="gallery-arrow-left"/>
+                <img src={leftArrow} alt="" className= {pictures.length === 1 ? "hidden" : "gallery-arrow-left"}/>
             </button>
             <img src={currentPicture} alt='banner-show' className='banner-show' />
             <button onClick={() => {
                 setCurrentPicture(getNextPicture)
-                }}>
-                    <img src={rightArrow} alt="" className="gallery-arrow-right"/>
+                }} className= {{pictures}.length === 0 ? "hidden" : null}>
+                    <img src={rightArrow} alt="" className= {pictures.length === 1 ? "hidden" : "gallery-arrow-right"}/>
             </button>
         </div>
     )

@@ -1,25 +1,29 @@
 import { useParams, useLocation } from 'react-router-dom'
 import Rating  from '../../components/Rating'
 import Tag from '../../components/Tag'
+import Error from '../../components/Error'
 import '../../styles/pages/Flat.css'
 import Collapse from '../../components/Collapse'
 import Gallery from '../../components/Gallery'
 
 function Flat() {
    
-    const { flatId } = useParams()
-    const location = useLocation()
+    const { flatId } = useParams();
+    const location = useLocation();
+    let currentFlat = {};
+    let ownerFirstName = '';
+    let ownerLasttName = '';
+  
+    if(location.state) {
+        const { flatsList } = location.state
+        currentFlat = flatsList.find( flat => flat.id === flatId)
 
-    const { flatsList } = location.state
-    const currentFlat = flatsList.find( flat => flat.id === flatId)
-
-    const ownerFirstName = currentFlat.host.name.split(' ')[0]
-    const ownerLasttName = currentFlat.host.name.split(' ')[1]
-
-   
-
-
+        ownerFirstName = currentFlat.host.name.split(' ')[0]
+        ownerLasttName = currentFlat.host.name.split(' ')[1]
+    }
+    
     return(
+        Object.keys(currentFlat).length === 0 ? <Error /> :
         <main className='show-container'>
             <Gallery pictures={currentFlat.pictures}/>
             <section className='main-title'>

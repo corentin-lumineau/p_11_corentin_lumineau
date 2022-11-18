@@ -17,6 +17,9 @@ function Home() {
         fetch("flats.json")
         .then((response) => response.json())
         .then((data) => setMyFlats(data))
+        .catch((error) => {
+            console.log(error);
+        })
    } 
         
 
