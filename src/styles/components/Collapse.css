@@ -12,10 +12,6 @@
     
 }
 
-.collapse-header img {
-   transform: scale(0.5);
-}
-
 .collapse-content {
     color: var(--color-primary);
     line-height: 1.5em;
@@ -27,6 +23,14 @@
 
 .collapse-content p {
     font-weight: 300;
+}
+
+.arrow-up {
+    transform: scale(0.5);
+}
+
+.arrow-down {
+    transform: scale(0.5) rotate(180deg);
 }
 
 @media screen and (max-width: 800px) {
