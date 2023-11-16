@@ -37,7 +37,7 @@ rails db:migrate
 POST api/v1/users
 ```
 
-### Format de la requête
+### Body
 
 ```
 {
@@ -52,9 +52,8 @@ La documentation de cette API a été généré sur l'outil Swagger. Pour affich
 
 ## Test
 
-Pour lancer le test de l'API inscription :
-`rspec`
+Pour lancer les test de l'API inscription :
 
 ```
-
+rspec
 ```
