@@ -37,6 +37,8 @@ rails s
 
 ## Utilisation
 
+- Connect-vous à l'API en utilisant l'URL localhost:3000/api/v1
+
 ### Endpoints
 
 ```
@@ -82,4 +84,4 @@ bundle exec rspec
 
 ## License
 
-Ce project bénéifcie de la license MIT.
+Ce project bénéficie de la license MIT.
