@@ -17,7 +17,7 @@ function Flat() {
     if(location.state) {
         const { flatsList } = location.state
         currentFlat = flatsList.find( flat => flat.id === flatId)
-
+        
         ownerFirstName = currentFlat.host.name.split(' ')[0]
         ownerLasttName = currentFlat.host.name.split(' ')[1]
     }

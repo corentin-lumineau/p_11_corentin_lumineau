@@ -6,7 +6,7 @@ import '../styles/components/Gallery.css'
 function Gallery({pictures}) {
   
     const [currentPicture, setCurrentPicture] = useState(pictures[0]);
-
+   
     const getNextPicture = (currentPicture) => {
         let nextPicture = '';
         if (pictures[pictures.length - 1] === currentPicture) {
@@ -39,7 +39,7 @@ function Gallery({pictures}) {
             <img src={currentPicture} alt='banner-show' className='banner-show' />
             <button onClick={() => {
                 setCurrentPicture(getNextPicture)
-                }} className= {{pictures}.length === 0 ? "hidden" : null}>
+                }}>
                     <img src={rightArrow} alt="" className= {pictures.length === 1 ? "hidden" : "gallery-arrow-right"}/>
             </button>
         </div>
