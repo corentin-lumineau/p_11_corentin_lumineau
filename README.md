@@ -35,7 +35,16 @@ rails db:migrate
 
 ```
 POST api/v1/users
+```
 
+### Format de la requête
+
+````
+{
+    user: {
+        pseudo: "EXP"
+    }
+}
 ```
 
 La documentation de cette API a été généré sur l'outil Swagger. Pour afficher la documentation, veuillez récupérer le contenu du fichier `swagger.yaml` et le copier dans
@@ -45,3 +54,4 @@ La documentation de cette API a été généré sur l'outil Swagger. Pour affich
 
 Pour lancer le test de l'API inscription :
 `rspec`
+````
