@@ -39,7 +39,7 @@ POST api/v1/users
 
 ### Format de la requête
 
-````
+```
 {
     user: {
         pseudo: "EXP"
@@ -54,4 +54,7 @@ La documentation de cette API a été généré sur l'outil Swagger. Pour affich
 
 Pour lancer le test de l'API inscription :
 `rspec`
-````
+
+```
+
+```
