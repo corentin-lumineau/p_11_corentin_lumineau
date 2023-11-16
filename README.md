@@ -55,5 +55,5 @@ La documentation de cette API a été généré sur l'outil Swagger. Pour affich
 Pour lancer les test de l'API inscription :
 
 ```
-rspec
+bundle exec rspec
 ```
