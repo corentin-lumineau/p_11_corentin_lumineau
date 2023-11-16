@@ -29,6 +29,12 @@ bundle install
 rails db:migrate
 ```
 
+4. Lancer un serveur local sur le port 3000 :
+
+```
+rails s
+```
+
 ## Utilisation
 
 ### Endpoints
@@ -57,6 +63,8 @@ POST api/v1/users
 }
 ```
 
+### Note
+
 Ce projet bénéficie d'une documentation Swagger. Vous pouvez récupérer le contenu du fichier `swagger.yaml` et le copier dans
 [l'outil swagger](https://editor.swagger.io/)
 
@@ -67,3 +75,11 @@ Pour lancer les test de l'API inscription :
 ```
 bundle exec rspec
 ```
+
+## Auteur
+
+- [Corentin LUMINEAU](https://github.com/corentin-lumineau/)
+
+## License
+
+Ce project bénéifcie de la license MIT.
