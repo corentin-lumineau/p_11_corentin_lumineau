@@ -1,7 +1,7 @@
 # README
 
 Bienvenue sur l'API inscription. Cette API permet de créer des utilisateurs en rentrant uniquement son pseudo.
-Si le pseudo renseigné est déjà utilisé, notre API se chargera pour vous de vous en créer un unique en son genre !
+Si le pseudo renseigné est déjà utilisé, notre API se chargera pour vous d'en créer un unique en son genre !
 
 ## Configuration requise
 
@@ -37,7 +37,7 @@ rails s
 
 ## Utilisation
 
-- Connect-vous à l'API en utilisant l'URL localhost:3000/api/v1
+- Connectez-vous à l'API en utilisant l'URL http://localhost:3000/api/v1
 
 ### Endpoints
 
