@@ -47,7 +47,17 @@ POST api/v1/users
 }
 ```
 
-La documentation de cette API a été généré sur l'outil Swagger. Pour afficher la documentation, veuillez récupérer le contenu du fichier `swagger.yaml` et le copier dans
+### Response
+
+```
+{
+	"id": 1,
+	"pseudo": "EXP",
+	"status": "created"
+}
+```
+
+Ce projet bénéficie d'une documentation Swagger. Vous pouvez récupérer le contenu du fichier `swagger.yaml` et le copier dans
 [l'outil swagger](https://editor.swagger.io/)
 
 ## Test
