@@ -1,7 +1,7 @@
 # README
 
-Bienvenue sur l'API inscription. Cette API permet à un utilisateur de s'inscrire facilement sur notre application.
-Veuillez lire la section di-dessous pour plus d'informations.
+Bienvenue sur l'API inscription. Cette API permet de créer des utilisateurs en rentrant uniquement son pseudo.
+Si le pseudo renseigné est déjà utilisé, notre API se chargera pour vous de vous en créer un unique en son genre !
 
 ## Configuration requise
 
@@ -30,6 +30,13 @@ rails db:migrate
 ```
 
 ## Utilisation
+
+### Endpoints
+
+```
+POST api/v1/users
+
+```
 
 La documentation de cette API a été généré sur l'outil Swagger. Pour afficher la documentation, veuillez récupérer le contenu du fichier `swagger.yaml` et le copier dans
 [l'outil swagger](https://editor.swagger.io/)
